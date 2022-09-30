@@ -1,0 +1,270 @@
+body{
+  margin: 0;
+  background-color: rgb(201, 130, 0);
+}
+.container {
+  width: 50%;
+  margin: auto;
+  background-color:white;
+  height: 100vh;
+  border-radius: 5%;
+
+}
+
+.app-title{
+  margin-top: 0;
+  /* padding-left: 18rem; */
+  padding-left: 42%;
+  padding-top: 50px;
+  color: rgb(168, 109, 0);
+  font-style: italic;
+}
+
+.empty-state {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.checklist-icon {
+  margin-bottom: 20px;
+  width: 180px;
+  height: 180px;
+}
+
+.empty-state__title {
+  color: rgb(196, 127, 0);
+  margin-left: 20px;
+}
+
+.empty-state__description {
+color: rgb(207, 135, 0);
+margin-left: 40px;
+}
+.empty-state__title, .empty-state__description {
+  margin-bottom: 20px;
+}
+
+.todo-list:empty + .empty-state {
+  display: flex;
+} 
+
+.js-form {
+  /* padding-left: 16rem; */
+  padding-left: 37%;
+}
+
+.js-todo-input {
+  padding: 10px;
+  border-color: rgb(196, 127, 0) ;
+}
+
+.todo-list {
+  list-style: none;
+  padding-left: 10rem;
+  /* margin-bottom: 50px; */
+  padding-bottom: 10px;
+}
+
+.todo-list > * {
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+  text-transform: capitalize; 
+  color: rgb(168, 109, 0);
+}
+
+.delete-todo {
+  height: 30px;
+  width: 30px;
+  color: white;
+  border: none;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.tick {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.done span {
+  text-decoration: line-through;
+}
+
+.tick::before {
+  content: '✓';
+  font-size: 20px;
+  display: none;
+}
+
+.done .tick::before {
+  display: inline;
+}
+@media (min-width: 375px) and (max-width: 549px){
+  .js-form {
+    padding-left: 15%;
+  }
+  .app-title{
+    padding-left: 22%;
+    padding-right: 20px;
+  }
+  .empty-state__title {
+    margin-left: 0.1rem;
+    font-size: 1.1rem;
+  }
+  .empty-state__description {
+    font-size: 15px;
+    margin-left: 31px;
+    }
+    .tick {
+      width: 25px;
+      height: 25px;
+    }
+    .tick::before {
+      font-size: 10px;
+
+    }
+    .js-todo-input {
+      padding: 0;
+    font-size: 12px;
+    }
+  .todo-list {
+    padding-left: 10%;
+  }
+  .todo-list > * {
+    font-size: 0.8rem;
+  }
+  .tick {
+    width: 10px;
+    height: 10px;
+  }
+  .delete-todo {
+    height: 20px;
+    width: 20px;
+    font-size: 0.9rem;
+    margin-left: 30px;
+  }  
+}
+@media (min-width: 550px) and (max-width: 599px){
+  .js-form {
+    padding-left: 18%;
+  }
+  .app-title{
+    padding-left: 28%;
+  }
+  .empty-state__title {
+    margin-left: 15px;
+    font-size: 1.3rem;
+  }
+  .empty-state__description {
+    font-size: 0.6rem;
+    margin-left: 35px;
+    }
+    .js-todo-input {
+      padding: 0;
+    }
+  .todo-list {
+    padding-left: 0;
+  }
+  .todo-list > * {
+    font-size: 0.8rem;
+  }
+  .tick {
+    width: 10px;
+    height: 10px;
+  }
+  .delete-todo {
+    height: 20px;
+    width: 20px;
+    font-size: 0.9rem;
+    margin-left: 30px;
+  } 
+}
+@media (min-width:600px) and (max-width: 689px){
+  .js-form {
+    padding-left: 24%;
+  }
+  .app-title{
+    padding-left: 30%;
+  }
+  .todo-list {
+    padding-left: 3rem;
+  }
+  .todo-list > * {
+    font-size: 0.8rem;
+  }
+  .tick {
+    width: 10px;
+    height: 10px;
+  }
+  .delete-todo {
+    height: 20px;
+    width: 20px;
+    font-size: 0.9rem;
+    margin-left: 30px;
+  }
+}
+@media (min-width: 690px) and (max-width: 779px){
+  .js-form {
+    padding-left: 27%;
+  }
+  .app-title{
+    padding-left: 33%;
+  }
+  .todo-list {
+    padding-left: 4rem;
+  }
+  .todo-list > * {
+    font-size: 1rem;
+  }
+  .tick {
+    width: 10px;
+    height: 10px;
+  }
+  .delete-todo {
+    height: 20px;
+    width: 20px;
+    font-size: 0.9rem;
+  }
+
+}
+
+@media (min-width: 780px) and (max-width: 919px){
+  .js-form {
+    padding-left: 30%;
+  }
+  .app-title{
+    padding-left: 36%;
+  }
+  .todo-list {
+    padding-left: 5rem;
+  }
+}
+
+@media (min-width: 920px) and (max-width: 1189px){
+  .js-form {
+    padding-left: 34%;
+  }
+  .app-title{
+    padding-left: 40%;
+  }
+  .todo-list {
+    list-style: none;
+    padding-left: 5rem;
+  }
+}
+  
