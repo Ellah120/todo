@@ -116,7 +116,7 @@ input[type="checkbox"] {
 }
 @media (min-width: 375px) and (max-width: 549px){
   .js-form {
-    padding-left: 15%;
+    padding-left: 11%;
   }
   .app-title{
     padding-left: 22%;
