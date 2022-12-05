@@ -1,7 +1,7 @@
 body{
   margin: 0;
   background-color: rgb(201, 130, 0);
-  height: 100vh;
+  /* height: 100vh; */
 }
 .container {
   width: 50%;
@@ -115,16 +115,20 @@ input[type="checkbox"] {
 .done .tick::before {
   display: inline;
 }
-@media (min-width: 375px) and (max-width: 549px){
+@media (min-width: 375px) and (max-width: 430px){
+  body{
+    background-color: white;
+  }
   .container {
-    width: 70%;
+    width: 80%;
+    background-color: white;
   }
 
   .js-form {
     padding-left: 11%;
   }
   .app-title{
-    padding-left: 22%;
+    padding-left: 30%;
     padding-right: 20px;
   }
   .empty-state__title {
@@ -145,6 +149,7 @@ input[type="checkbox"] {
     }
     .js-todo-input {
       padding: 0;
+      margin-left: 1.875rem;
     font-size: 12px;
     }
   .todo-list {
@@ -161,28 +166,142 @@ input[type="checkbox"] {
     height: 9px;
     width: 9px;
     font-size: 0.2rem;
-    /* padding-left: -30px; */
     margin-left: 30px;
-    /* transform: translateY(-5px); */
+  }  
+}
+@media (min-width: 431px) and (max-width: 450px){
+  body{
+    background-color: white;
+  }
+  .container {
+    width: 80%;
+    background-color: white;
+  }
+
+  .js-form {
+    padding-left: 11%;
+  }
+  .app-title{
+    padding-left: 33%;
+    padding-right: 20px;
+  }
+  .empty-state__title {
+    margin-left: 0.1rem;
+    font-size: 1.1rem;
+  }
+  .empty-state__description {
+    font-size: 15px;
+    margin-left: 31px;
+    }
+    .tick {
+      width: 25px;
+      height: 25px;
+    }
+    .tick::before {
+      font-size: 10px;
+
+    }
+    .js-todo-input {
+      padding: 0;
+      margin-left: 2.7rem;
+    font-size: 12px;
+    }
+  .todo-list {
+    padding-left: 10%;
+  }
+  .todo-list > * {
+    font-size: 0.8rem;
+  }
+  .tick {
+    width: 10px;
+    height: 10px;
+  }
+  .delete-todo {
+    height: 9px;
+    width: 9px;
+    font-size: 0.2rem;
+    margin-left: 30px;
+  }  
+}
+@media (min-width: 451px) and (max-width: 549px){
+  body{
+    background-color: white;
+  }
+  .container {
+    width: 80%;
+    background-color: white;
+  }
+
+  .js-form {
+    padding-left: 11%;
+  }
+  .app-title{
+    padding-left: 33%;
+    padding-right: 20px;
+  }
+  .empty-state__title {
+    margin-left: 0.1rem;
+    font-size: 1.1rem;
+  }
+  .empty-state__description {
+    font-size: 15px;
+    margin-left: 31px;
+    }
+    .tick {
+      width: 25px;
+      height: 25px;
+    }
+    .tick::before {
+      font-size: 10px;
+
+    }
+    .js-todo-input {
+      padding: 0;
+      margin-left: 20%;
+    font-size: 12px;
+    }
+  .todo-list {
+    padding-left: 10%;
+  }
+  .todo-list > * {
+    font-size: 0.8rem;
+  }
+  .tick {
+    width: 10px;
+    height: 10px;
+  }
+  .delete-todo {
+    height: 9px;
+    width: 9px;
+    font-size: 0.2rem;
+    margin-left: 30px;
   }  
 }
 @media (min-width: 550px) and (max-width: 599px){
+  body{
+    background-color: white;
+  }
+  .container {
+    width: 80%;
+    background-color: white;
+  }
   .js-form {
     padding-left: 18%;
   }
   .app-title{
-    padding-left: 28%;
+    padding-left: 35%;
   }
   .empty-state__title {
     margin-left: 15px;
     font-size: 1.3rem;
   }
   .empty-state__description {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     margin-left: 35px;
     }
     .js-todo-input {
       padding: 0;
+      margin-left: 20%;
     }
   .todo-list {
     padding-left: 0;
@@ -202,17 +321,27 @@ input[type="checkbox"] {
   } 
 }
 @media (min-width:600px) and (max-width: 689px){
+  body{
+    background-color: white;
+  }
+  .container {
+    width: 80%;
+    background-color: white;
+  }
   .js-form {
     padding-left: 24%;
   }
   .app-title{
-    padding-left: 30%;
+    padding-left: 35%;
   }
   .todo-list {
     padding-left: 3rem;
   }
   .todo-list > * {
     font-size: 0.8rem;
+  }
+  .js-todo-input {
+    margin-left: 10%;
   }
   .tick {
     width: 10px;
